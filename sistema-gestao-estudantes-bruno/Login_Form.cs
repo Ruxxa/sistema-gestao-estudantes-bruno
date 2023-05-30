@@ -29,7 +29,7 @@ namespace sistema_gestao_estudantes_bruno
 
         private void Login_Form_Load(object sender, EventArgs e)
         {
-            pictureBox1.Image = Image.FromFile("../../imagens/user.png");
+            pictureBox1.Image = Image.FromFile("../../imagens/User.png");
         }
     }
 }
