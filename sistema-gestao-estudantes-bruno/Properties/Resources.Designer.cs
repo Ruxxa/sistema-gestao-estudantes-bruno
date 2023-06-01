@@ -59,15 +59,5 @@ namespace sistema_gestao_estudantes_bruno.Properties {
                 resourceCulture = value;
             }
         }
-        
-        /// <summary>
-        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap jailson_mendes_meme_2 {
-            get {
-                object obj = ResourceManager.GetObject("jailson-mendes-meme-2", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
     }
 }
