@@ -70,7 +70,7 @@ namespace sistema_gestao_estudantes_bruno
             if ((anoAtual - anoDeNascimento) < 10 ||
                 (anoAtual - anoDeNascimento) > 100) 
             {
-                MessageBox.Show("A idade precisa ser entr 10 e 100 anos.","Idade Inválida", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("A idade precisa ser entre 10 e 100 anos.","Idade Inválida", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
 
             else if (Verificar())
@@ -80,6 +80,14 @@ namespace sistema_gestao_estudantes_bruno
                 {
                     MessageBox.Show("Novo Estudante Cadastrado","Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
+                else
+                {
+                    MessageBox.Show("Erro","Inserir Estudante",MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                }
+            }
+            else
+            {
+                MessageBox.Show("Campos não preenchidos", "Inserir Estudante", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
 
         }
@@ -89,6 +97,7 @@ namespace sistema_gestao_estudantes_bruno
             if ((textBoxNome.Text.Trim() == "") ||
                 (textBoxSobrenome.Text.Trim() == "") ||
                 (textBoxTelefone.Text.Trim() == "") ||
+                (textBoxEndereco.Text.Trim() == "") ||
                 (pictureBoxFoto.Image == null))
             {
                 return false;
