@@ -16,7 +16,7 @@ namespace sistema_gestao_estudantes_bruno
         {
             get 
             { 
-                return conexao; 
+                return conexao;  
             }
         }
 
