@@ -76,7 +76,7 @@ namespace sistema_gestao_estudantes_bruno
             else if (Verificar())
             {
                 pictureBoxFoto.Image.Save(foto, pictureBoxFoto.Image.RawFormat);
-                if (estudante.inserirEstudante(nome, sobrenome, nascimento, telefone, genero, endereco, foto))
+                if (estudante.atualizarEstudante(nome, sobrenome, nascimento, telefone, genero, endereco, foto))
                 {
                     MessageBox.Show("Novo Estudante Cadastrado","Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }

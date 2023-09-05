@@ -14,7 +14,7 @@ namespace sistema_gestao_estudantes_bruno
     {
         MEU_BD bancoDeDados = new MEU_BD();
 
-        public bool inserirEstudante(string nome, string sobrenome, DateTime nascimento, string telefone, string genero, string endereco, MemoryStream foto)
+        public bool atualizarEstudante(string nome, string sobrenome, DateTime nascimento, string telefone, string genero, string endereco, MemoryStream foto)
         {
             MySqlCommand comando = new MySqlCommand("INSERT INTO `estudantes`(`nome`, `sobrenome`, `nascimento`, `genero`, `telefone`, `endereco`, `foto`) VALUES (@nm,@sbn,@nsc,@gen,@tel,@end,@ft)", bancoDeDados.getConexao);
 
