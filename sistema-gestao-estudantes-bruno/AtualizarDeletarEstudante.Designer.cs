@@ -214,6 +214,7 @@
             this.buttonRemover.TabIndex = 16;
             this.buttonRemover.Text = "Remover";
             this.buttonRemover.UseVisualStyleBackColor = true;
+            this.buttonRemover.Click += new System.EventHandler(this.buttonRemover_Click);
             // 
             // textBoxTelefone
             // 

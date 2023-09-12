@@ -13,6 +13,7 @@ namespace sistema_gestao_estudantes_bruno
 {
     public partial class AtualizarDeletarEstudante : Form
     {
+        Estudante estudante = new Estudante();
         public AtualizarDeletarEstudante()
         {
             InitializeComponent();
@@ -102,6 +103,11 @@ namespace sistema_gestao_estudantes_bruno
             {
                 MessageBox.Show("Campos não preenchidos", "Inserir Estudante", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
+        }
+
+        private void buttonRemover_Click(object sender, EventArgs e)
+        {
+            int id = Convert.ToInt32(textBoxID.Text);
         }
     }
 }
